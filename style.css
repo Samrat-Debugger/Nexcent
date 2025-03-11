@@ -1,0 +1,141 @@
+/*google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* css variables */
+:root {
+    --fs-body: 14px;
+    --primary: #4CAF4F;
+    --secondary: #263238;
+    --info: #2194f3;
+    --warning: #FBC02D;
+    --error: #E53835;
+    --success: #2E7D31;
+}
+
+
+
+
+
+
+
+
+/* css reset */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.max-width {
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    font-size: var(--fs-body);
+    cursor: pointer;
+}
+
+/* header section styling */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-size: var(--fs-body);
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu a {
+    margin-left: 15px;
+}
+
+
+.btnPrimary {
+    padding: 10px 15px;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.burger {
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 5px;
+    display: none;
+
+}
+
+.burger:active {
+    background-color: var(--success);
+}
+
+.burger i {
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+/* hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+
+.experience h1 {
+    font-size: 50px;
+    max-width: 500px;
+}
+
+.experience span {
+    color: var(--primary);
+
+}
+
+.boy img {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+
+    /* header section */
+    .burger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* hero section */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .experience {
+        text-align: center;
+    }
+}
