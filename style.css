@@ -10,6 +10,7 @@
     --warning: #FBC02D;
     --error: #E53835;
     --success: #2E7D31;
+    --neutral-silver: #F5F7FA;
 }
 
 
@@ -47,7 +48,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin: 0 auto;
     font-size: var(--fs-body);
 
@@ -92,12 +93,18 @@ button {
 }
 
 /* hero section */
+.bgSilver {
+    background-color: var(--neutral-silver);
+
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     margin: 0 auto;
+    column-gap: 20px;
 }
 
 
@@ -150,5 +157,29 @@ button {
 
     .experience {
         text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /* hero section */
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    /* hero section */
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    /* hero section */
+    .hero h1 {
+        font-size: 20px;
     }
 }
