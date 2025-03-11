@@ -95,14 +95,16 @@ button {
 .hero {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
     margin: 0 auto;
 }
 
 
 .experience h1 {
-    font-size: 50px;
-    max-width: 500px;
+    font-size: 72px;
+    max-width: 700px;
+    width: 100%;
 }
 
 .experience span {
@@ -112,10 +114,22 @@ button {
 
 .boy img {
     width: 100%;
-    max-width: 350px;
+    max-width: 600px;
 }
 
 /* responsive */
+@media screen and (max-width:1280px) {
+    .boy img {
+        max-width: 500px;
+    }
+
+    .experience h1 {
+        font-size: 50px;
+        max-width: 500px;
+
+    }
+
+}
 
 @media screen and (max-width: 768px) {
 
@@ -131,7 +145,6 @@ button {
     /* hero section */
     .hero {
         flex-direction: column;
-        align-items: center;
         row-gap: 30px;
     }
 
