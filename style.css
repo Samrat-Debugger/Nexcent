@@ -124,8 +124,9 @@ button {
     max-width: 600px;
 }
 
-/* logo section */
-.logos {
+/* logo  and management section */
+.logos,
+.management {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -145,10 +146,30 @@ button {
     margin: 25px auto 0;
     padding: 0 20px;
     flex-wrap: wrap;
-
-
-
 }
+
+
+.management {
+    text-align: center;
+    margin: auto;
+}
+
+.management h2 {
+    max-width: 470px;
+    margin: auto;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    grid-gap: 30px;
+}
+
+.infoCard {
+    max-width: 250px;
+}
+
 
 /* responsive */
 @media screen and (max-width:1280px) {
@@ -163,6 +184,13 @@ button {
     }
 
 }
+
+@media screen and (max-width: 800px) {
+    .info {
+        grid-template-columns: auto auto;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -199,6 +227,10 @@ button {
     /* hero section */
     .hero h1 {
         font-size: 30px;
+    }
+
+    .info {
+        grid-template-columns: auto;
     }
 }
 
